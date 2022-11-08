@@ -49,6 +49,13 @@ mkdir ~/minio
 minio server ~/minio --console-address :9090
 ```
 
+## Install and Configure MinIO Client
+```
+mc alias set local http://127.0.0.1:9000 minioadmin minioadmin
+mc admin info local
+mc ls local
+```
+
 ## Running MinIO with systemd
 ```
 # Add minio-user group
